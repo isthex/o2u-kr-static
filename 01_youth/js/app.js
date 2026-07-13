@@ -120,7 +120,7 @@ let selAge = 0;
 const selFlags = new Set();
 
 document.addEventListener('DOMContentLoaded', () => {
-  if (typeof initSidebar === 'function') initSidebar({ relatedTools: ['46_youthsave', '22_youth-rent-support', '33_national-scholarship-checker', '28_work-support-system', '31_unemployment-benefits-calculator', '19_modoo-card-calculator', '21_median-income-calculator', 'gicho', 'eitc-grant'] });
+  if (typeof initSidebar === 'function') initSidebar({ relatedTools: ['46_youthsave', '22_youth-rent-support', '33_national-scholarship-checker', '28_work-support-system', '19_modoo-card-calculator'] });
   document.getElementById('find-form').addEventListener('submit', find);
   document.getElementById('btn-share').addEventListener('click', handleShare);
 
