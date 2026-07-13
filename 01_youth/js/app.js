@@ -24,9 +24,9 @@ const BENEFITS = [
     boost: ['lowincome'],
     cond: '무주택 독립거주 · 청년가구 중위소득 60% 이하 · 원가구 100% 이하',
     give: '월 최대 20만원 × 최대 24개월 (총 480만원) · 상시 신청',
-    link: 'https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveTWAT52011M.do?wlfareInfoId=WLF00004661',
-    linkLabel: '복지로에서 신청 →',
-    official: true,
+    link: 'https://housesupport.ssp2021.kr/',
+    linkLabel: '자격·예상 지원금 5초 판독 →',
+    official: false,
   },
   {
     id: 'naeil',
@@ -52,8 +52,51 @@ const BENEFITS = [
     boost: [],
     cond: '월 15회 이상 대중교통 이용 · K-패스 전용 카드',
     give: '교통비 30% 환급 (일반 20%보다 높음) · 61회부터 100% 환급',
-    link: 'https://korea-pass.kr/',
-    linkLabel: 'K-패스 공식 안내 →',
+    link: 'https://modoocard.seosann.kr/',
+    linkLabel: '모두의 카드 환급액 계산기 →',
+    official: false,
+  },
+  {
+    id: 'scholarship',
+    badge: '🎓 학업',
+    name: '국가장학금',
+    ageMin: 19, ageMax: 34,
+    flags: ['student'],
+    required: true,
+    boost: ['lowincome'],
+    cond: '대학 재학·입학 예정 · 소득구간(학자금 지원구간)별 차등',
+    give: '등록금 범위 내 소득구간별 차등 지원 · 1·2학기 별도 신청',
+    link: 'https://scholarship.ledgolf.kr/',
+    linkLabel: '2026 자격 판독기 →',
+    official: false,
+  },
+  {
+    id: 'worksupport',
+    badge: '💼 취업',
+    name: '국민취업지원제도',
+    ageMin: 15, ageMax: 34,
+    ageNote: '청년 특례 만 15~34세 (병역기간 가산)',
+    flags: ['jobseek'],
+    required: true,
+    boost: ['lowincome'],
+    cond: '미취업 구직자 · 유형별 소득·재산 요건',
+    give: '구직촉진수당 월 50만원 × 6개월 + 취업지원 서비스',
+    link: 'https://worksupport.ryunadb.kr/',
+    linkLabel: '자격 판독기 →',
+    official: false,
+  },
+  {
+    id: 'unemp',
+    badge: '📄 실업',
+    name: '실업급여 (구직급여)',
+    ageMin: 15, ageMax: 39,
+    flags: ['jobseek'],
+    required: true,
+    boost: ['work'],
+    cond: '고용보험 180일 이상 · 비자발적 이직',
+    give: '이직 전 평균임금 60% 수준 · 나이·가입기간별 120~270일',
+    link: 'https://unemp.winevisionshop.kr/',
+    linkLabel: '자격 판독기 →',
     official: false,
   },
   {
@@ -72,12 +115,12 @@ const BENEFITS = [
   },
 ];
 
-const fmtChips = { rent: '자취 중', work: '일하는 중', lowincome: '소득 적음', transit: '대중교통' };
+const fmtChips = { rent: '자취 중', work: '일하는 중', jobseek: '구직 중', student: '대학생', lowincome: '소득 적음', transit: '대중교통' };
 let selAge = 0;
 const selFlags = new Set();
 
 document.addEventListener('DOMContentLoaded', () => {
-  if (typeof initSidebar === 'function') initSidebar({ relatedTools: ['youth-future-savings', 'gicho', 'eitc-grant'] });
+  if (typeof initSidebar === 'function') initSidebar({ relatedTools: ['46_youthsave', '22_youth-rent-support', '33_national-scholarship-checker', '28_work-support-system', '31_unemployment-benefits-calculator', '19_modoo-card-calculator', '21_median-income-calculator', 'gicho', 'eitc-grant'] });
   document.getElementById('find-form').addEventListener('submit', find);
   document.getElementById('btn-share').addEventListener('click', handleShare);
 
