@@ -34,6 +34,7 @@ const BENEFITS = [
     name: '청년내일저축계좌',
     ageMin: 15, ageMax: 39,
     flags: ['work', 'lowincome'],
+    required: true,               // 근로소득이 필수 조건 — work/lowincome 선택 시에만 노출
     boost: [],
     cond: '근로·사업소득 월 10만원 이상 · 저소득 가구 (소득구간별 상이)',
     give: '본인 10만원 저축 시 정부 10~30만원 추가 적립 (3년 유지 + 교육 이수)',
