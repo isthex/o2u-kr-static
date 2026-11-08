@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>맞벌이 연말정산 몰아주기 — 카드·의료비 조건과 환급액 계산 방법</title>
+<meta name="description" content="맞벌이 연말정산 몰아주기는 보통 소득이 낮은 쪽으로 카드·의료비를 몰고, 세율이 두 구간 이상 벌어질 때만 고소득자 쪽에 넣어요. 11월 미리보기로 환급액 계산부터 돌려 봅니다.">
+<link rel="canonical" href="https://o2u.kr/%EB%A7%9E%EB%B2%8C%EC%9D%B4-%EC%97%B0%EB%A7%90%EC%A0%95%EC%82%B0-%EB%AA%B0%EC%95%84%EC%A3%BC%EA%B8%B0-%EC%B9%B4%EB%93%9C-%EC%9D%98%EB%A3%8C%EB%B9%84-%EC%A1%B0%EA%B1%B4%EA%B3%BC-%ED%99%98%EA%B8%89%EC%95%A1-%EA%B3%84%EC%82%B0-%EB%B0%A9%EB%B2%95/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20100%20100%27%3E%3Crect%20width%3D%27100%27%20height%3D%27100%27%20rx%3D%2718%27%20fill%3D%27%232563eb%27%2F%3E%3Ctext%20x%3D%2750%27%20y%3D%2772%27%20font-size%3D%2762%27%20text-anchor%3D%27middle%27%20fill%3D%27white%27%20font-family%3D%27sans-serif%27%20font-weight%3D%27800%27%3EO%3C%2Ftext%3E%3C%2Fsvg%3E">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="오투유">
+<meta property="og:title" content="맞벌이 연말정산 몰아주기 — 카드·의료비 조건과 환급액 계산 방법">
+<meta property="og:description" content="맞벌이 연말정산 몰아주기는 보통 소득이 낮은 쪽으로 카드·의료비를 몰고, 세율이 두 구간 이상 벌어질 때만 고소득자 쪽에 넣어요. 11월 미리보기로 환급액 계산부터 돌려 봅니다.">
+<meta property="og:url" content="https://o2u.kr/%EB%A7%9E%EB%B2%8C%EC%9D%B4-%EC%97%B0%EB%A7%90%EC%A0%95%EC%82%B0-%EB%AA%B0%EC%95%84%EC%A3%BC%EA%B8%B0-%EC%B9%B4%EB%93%9C-%EC%9D%98%EB%A3%8C%EB%B9%84-%EC%A1%B0%EA%B1%B4%EA%B3%BC-%ED%99%98%EA%B8%89%EC%95%A1-%EA%B3%84%EC%82%B0-%EB%B0%A9%EB%B2%95/">
+<meta property="og:image" content="https://o2u.kr/%EB%A7%9E%EB%B2%8C%EC%9D%B4-%EC%97%B0%EB%A7%90%EC%A0%95%EC%82%B0-%EB%AA%B0%EC%95%84%EC%A3%BC%EA%B8%B0-%EC%B9%B4%EB%93%9C-%EC%9D%98%EB%A3%8C%EB%B9%84-%EC%A1%B0%EA%B1%B4%EA%B3%BC-%ED%99%98%EA%B8%89%EC%95%A1-%EA%B3%84%EC%82%B0-%EB%B0%A9%EB%B2%95/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="article:published_time" content="2026-11-08T17:58:13+00:00">
+<link rel="alternate" type="application/rss+xml" href="https://o2u.kr/feed.xml" title="오투유">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "맞벌이 연말정산 몰아주기 — 카드·의료비 조건과 환급액 계산 방법", "description": "맞벌이 연말정산 몰아주기는 보통 소득이 낮은 쪽으로 카드·의료비를 몰고, 세율이 두 구간 이상 벌어질 때만 고소득자 쪽에 넣어요. 11월 미리보기로 환급액 계산부터 돌려 봅니다.", "url": "https://o2u.kr/%EB%A7%9E%EB%B2%8C%EC%9D%B4-%EC%97%B0%EB%A7%90%EC%A0%95%EC%82%B0-%EB%AA%B0%EC%95%84%EC%A3%BC%EA%B8%B0-%EC%B9%B4%EB%93%9C-%EC%9D%98%EB%A3%8C%EB%B9%84-%EC%A1%B0%EA%B1%B4%EA%B3%BC-%ED%99%98%EA%B8%89%EC%95%A1-%EA%B3%84%EC%82%B0-%EB%B0%A9%EB%B2%95/", "mainEntityOfPage": "https://o2u.kr/%EB%A7%9E%EB%B2%8C%EC%9D%B4-%EC%97%B0%EB%A7%90%EC%A0%95%EC%82%B0-%EB%AA%B0%EC%95%84%EC%A3%BC%EA%B8%B0-%EC%B9%B4%EB%93%9C-%EC%9D%98%EB%A3%8C%EB%B9%84-%EC%A1%B0%EA%B1%B4%EA%B3%BC-%ED%99%98%EA%B8%89%EC%95%A1-%EA%B3%84%EC%82%B0-%EB%B0%A9%EB%B2%95/", "datePublished": "2026-11-08T17:58:13+00:00", "dateModified": "2026-11-08T17:58:13+00:00", "image": ["https://o2u.kr/맞벌이-연말정산-몰아주기-카드-의료비-조건과-환급액-계산-방법/img1.jpg"], "inLanguage": "ko-KR", "author": {"@type": "Person", "name": "오투유"}, "publisher": {"@type": "Organization", "name": "오투유", "url": "https://o2u.kr/"}, "keywords": "맞벌이 연말정산 몰아주기, 맞벌이 연말정산 몰아주기 방법, 맞벌이 연말정산 신용카드 몰아주기, 맞벌이 연말정산 의료비 몰아주기, 맞벌이 연말정산 환급액 계산"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "오투유", "item": "https://o2u.kr/"}, {"@type": "ListItem", "position": 2, "name": "맞벌이 연말정산 몰아주기 — 카드·의료비 조건과 환급액 계산 방법", "item": "https://o2u.kr/%EB%A7%9E%EB%B2%8C%EC%9D%B4-%EC%97%B0%EB%A7%90%EC%A0%95%EC%82%B0-%EB%AA%B0%EC%95%84%EC%A3%BC%EA%B8%B0-%EC%B9%B4%EB%93%9C-%EC%9D%98%EB%A3%8C%EB%B9%84-%EC%A1%B0%EA%B1%B4%EA%B3%BC-%ED%99%98%EA%B8%89%EC%95%A1-%EA%B3%84%EC%82%B0-%EB%B0%A9%EB%B2%95/"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "맞벌이 연말정산 몰아주기 계산기는 따로 받아야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "따로 받을 필요는 없습니다. 국세청 홈택스의 연말정산 미리보기가 맞벌이 연말정산 절세 시뮬레이션을 대신해 주거든요. 10월 28일부터 12월 18일 사이에 부부 각자 로그인해 돌려 보면 됩니다."}}, {"@type": "Question", "name": "맞벌이 의료비 몰아주기 조건이 따로 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "맞벌이 부부도 배우자를 위해 직접 지급한 의료비는 지급한 사람이 공제받을 수 있습니다. 의료비 세액공제에는 배우자의 소득·나이 제한을 적용하지 않아요. 다만 자녀·부모 의료비는 부양가족으로 등록한 쪽이 공제받아요. 소득 적은 쪽이 3% 문턱이 낮아 보통 유리합니다."}}, {"@type": "Question", "name": "맞벌이 연말정산 자녀 공제 누구 쪽이 유리한가요?", "acceptedAnswer": {"@type": "Answer", "text": "기본공제(소득공제)는 적용 세율이 높은 쪽에 넣어야 과세표준이 크게 깎여요. 자녀 세액공제는 세율과 무관하지만 기본공제와 묶여 따라가니, 보통 과세표준이 높은 배우자 쪽으로 올리죠."}}, {"@type": "Question", "name": "맞벌이 연말정산 체크카드 공제도 몰아줄 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "신용카드와 같은 사람 아래에 체크카드·현금영수증을 묶으면 25% 문턱을 넘긴 뒤 30% 공제율이 걸려 유리합니다. 어차피 같은 '신용카드 등' 공제 묶음이라, 체크카드만 따로 다른 쪽에 넣을 수는 없어요."}}, {"@type": "Question", "name": "환급액 계산은 언제부터 가능한가요?", "acceptedAnswer": {"@type": "Answer", "text": "2026년 10월 28일부터 12월 18일까지 홈택스 미리보기에서 바로 돌려볼 수 있습니다. 당해 1~9월 간소화 자료가 미리 들어가 있어, 10~12월 사용 예정액만 추가로 입력하면 예상 환급액과 추가 납부액이 뜹니다."}}]}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5883889828782515" crossorigin="anonymous"></script>
+<style>
+:root{--brand:#2563eb;--dark:#1d4ed8;--light:#dbeafe;--bg:#f5f8ff;--text:#101c33;--muted:#5b6b8c;--border:#c9dcf8;--shadow:0 12px 35px rgba(37,99,235,.10)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;font-size:17.5px;line-height:1.85;word-break:keep-all;overflow-wrap:anywhere}
+a{color:var(--dark)}
+.main-header{background:linear-gradient(135deg,#1e3a8a,#2563eb);color:#fff;padding:26px 18px 30px}
+.header-inner,.head-title,.layout-container{max-width:640px;margin-left:auto;margin-right:auto}
+.brand{display:inline-block;color:#dbeafe;font-size:14px;font-weight:800;text-decoration:none;letter-spacing:-.01em;margin-bottom:12px}
+.head-title{font-size:26px;line-height:1.4;margin:0 0 12px;font-weight:900;letter-spacing:-.03em}
+.head-hook{margin:0;font-size:17px;line-height:1.65;color:#eef4ff;font-weight:600}
+.layout-container{display:block;padding:10px 18px 64px}
+.native-ad{margin:30px auto;text-align:center}
+.native-ad .adsbygoogle{display:block;min-height:100px}
+.native-ad-tag{display:none}
+.quick-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:8px 0 22px}
+.qf{background:#fff;border:1px solid var(--border);border-radius:14px;padding:14px 12px 12px;display:flex;flex-direction:column;gap:4px;min-width:0;box-shadow:0 4px 14px rgba(37,99,235,.06)}
+.qf-l{font-size:13.5px;color:var(--muted);font-weight:700;line-height:1.4}
+.qf-v{font-size:21px;color:var(--dark);font-weight:900;line-height:1.3;letter-spacing:-.02em}
+.qf-n{font-size:12.5px;color:var(--muted);line-height:1.4}
+.answer p{margin:0 0 14px;font-size:18px;line-height:1.85;font-weight:600}
+.key-note{margin:0 0 22px;padding:10px 14px;border-left:3px solid var(--brand);background:#eef4ff;border-radius:8px;font-size:15.5px;color:#1e3a8a;line-height:1.6}
+.byline{font-size:14px;color:var(--muted);margin:6px 2px 22px}
+.byline b{color:var(--text)}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}
+.toc a{font-size:14px;line-height:1.5;text-decoration:none;background:#fff;border:1px solid var(--border);color:var(--dark);padding:7px 13px;border-radius:999px;font-weight:700}
+.post-body{font-size:17.5px}
+.post-body p{margin:0 0 22px}
+.sec{margin:12px 0 10px}
+.post-body h2{font-size:23px;line-height:1.45;margin:52px 0 18px;padding-left:13px;border-left:4px solid var(--brand);font-weight:900;letter-spacing:-.02em;scroll-margin-top:12px}
+.post-body h3{font-size:19.5px;line-height:1.5;margin:34px 0 12px;color:var(--dark)}
+.post-body ul,.post-body ol{padding-left:22px;margin:0 0 22px}
+.post-body li{margin:8px 0}
+.post-fig{margin:24px 0 26px}
+.post-fig img{width:100%;height:auto;border-radius:14px;display:block;background:#e5edff}
+.post-body table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;font-size:15.5px;line-height:1.6;margin:0}
+.tbl-wrap{overflow-x:auto;margin:22px 0 26px;border-radius:12px;box-shadow:0 1px 3px rgba(16,28,51,.06)}
+.post-body caption{caption-side:top;text-align:left;font-size:14.5px;font-weight:800;color:var(--muted);padding:0 2px 10px;background:var(--bg)}
+.post-body th,.post-body td{padding:12px 12px;border-bottom:1px solid #e6eefc;text-align:left;vertical-align:top}
+.post-body th{background:var(--light);color:#1e3a8a;font-weight:800}
+.example{background:#eff6ff;border:1px solid var(--border);border-radius:14px;padding:16px 18px 2px;margin:26px 0}
+.opinion{background:#fff;border-left:4px solid var(--brand);border-radius:10px;padding:16px 18px 2px;margin:28px 0;box-shadow:0 1px 3px rgba(16,28,51,.05)}
+.cards{margin:48px 0 12px}
+.cards-t,.faq h2{font-size:22px;font-weight:900;margin:0 0 16px;letter-spacing:-.02em;line-height:1.45}
+.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.link-card{display:flex;flex-direction:column;gap:8px;background:#fff;border:1px solid var(--border);border-radius:16px;padding:18px 16px 16px;text-decoration:none;color:var(--text);box-shadow:var(--shadow);min-width:0}
+.link-card:hover{border-color:var(--brand)}
+.lc-kind{font-size:12.5px;font-weight:800;color:var(--muted)}
+.link-card.tool .lc-kind{color:var(--brand)}
+.lc-hook{font-size:17px;line-height:1.5;font-weight:800}
+.lc-title{font-size:14px;line-height:1.5;color:var(--dark);font-weight:700}
+.faq{margin:48px 0 12px}
+.qa{background:#fff;border:1px solid var(--border);border-radius:14px;padding:16px 18px;margin:12px 0}
+.qa summary{font-weight:800;cursor:pointer;font-size:17px;line-height:1.55}
+.qa p{margin:12px 0 4px;font-size:17px;line-height:1.8}
+.author-box{background:#fff;border:1px solid var(--border);border-radius:14px;padding:16px 18px;margin:34px 0 0;font-size:15px;color:var(--muted)}
+.author-box b{color:var(--text);font-size:15.5px}
+.author-box p{margin:6px 0 0}
+.kko-cta{display:block;margin:34px 0 10px;padding:24px 20px 22px;background:#FFFCEB;border:1px solid #F2E3A0;border-radius:18px;color:#1A2233!important;text-decoration:none!important;box-shadow:0 10px 26px rgba(120,95,0,.07)}
+.kko-badge{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;background:#FEE500;color:#2B1A16;font-size:12px;font-weight:800}
+.kko-badge i{width:6px;height:6px;border-radius:50%;background:#2B1A16;display:inline-block}
+.kko-head{display:block;margin:14px 0 8px;font-size:19px;font-weight:900;letter-spacing:-.03em;line-height:1.45}
+.kko-sub{display:block;font-size:15px;line-height:1.75;color:#5A6579}
+.kko-chips{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 18px}
+.kko-chips span{padding:4px 11px;border-radius:999px;background:#fff;color:#6B5A00;border:1px solid #EFE2A2;font-size:12px;font-weight:700}
+.kko-btn{display:block;padding:15px;border-radius:12px;background:#FEE500;color:#2B1A16;font-size:16px;font-weight:900;text-align:center}
+.site-foot{text-align:center;font-size:14px;color:var(--muted);padding:24px 16px 44px}
+.site-foot a{color:var(--muted)}
+@media(max-width:560px){
+ body{font-size:17.5px}
+ .layout-container{padding:8px 16px 52px}
+ .head-title{font-size:23.5px}
+ .quick-facts{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+ .qf{padding:12px 10px 10px}
+ .qf-l{font-size:12.5px}
+ .qf-v{font-size:18px}
+ .card-grid{grid-template-columns:1fr}
+ .post-body h2{font-size:21.5px;margin-top:46px}
+ .post-body h3{font-size:18.5px}
+}
+
+.cn{margin:26px 0 8px;background:#111317;border-radius:16px;padding:12px 12px 14px;color:#fff}
+.cn-top{display:flex;align-items:center;justify-content:space-between;margin:2px 4px 10px}
+.cn-t{font-size:15.5px;font-weight:900;letter-spacing:-.02em;color:#fff}
+.cn-pg{font-size:13.5px;color:#a9b0bd;font-weight:700}
+.cn-pg i{font-style:normal;color:#fff}
+.cn-wrap{position:relative}
+.cn-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;border-radius:10px;overscroll-behavior-x:contain;outline:0}
+.cn-track::-webkit-scrollbar{display:none}
+.cn-s{flex:0 0 100%;margin:0;scroll-snap-align:start;scroll-snap-stop:always}
+.cn-s img{display:block;width:100%;height:auto;aspect-ratio:4/5}
+.cn-nav{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border:0;border-radius:50%;background:rgba(255,255,255,.88);color:#111;font-size:28px;line-height:1;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.cn-prev{left:10px}.cn-next{right:10px}
+.cn-dots{display:flex;justify-content:center;gap:6px;margin:12px 0 2px}
+.cn-dots i{width:7px;height:7px;border-radius:50%;background:#4a505c;cursor:pointer}
+.cn-dots i.on{background:#FFD43B;width:18px;border-radius:4px}
+.cn-act{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.cn-act a,.cn-act button{display:flex;align-items:center;justify-content:center;gap:6px;padding:13px 8px;border-radius:11px;font:inherit;font-weight:900;font-size:15.5px;text-decoration:none;cursor:pointer;border:0;line-height:1.3}
+.cn-dl{background:#FFD43B;color:#111!important}
+.cn-share{background:#2a2f38;color:#fff}
+@media(hover:none){.cn-nav{display:none}}
+</style>
+</head>
+<body>
+<header class="main-header">
+  <div class="header-inner">
+    <a class="brand" href="/">오투유</a>
+    <h1 class="head-title">맞벌이 연말정산 몰아주기 — 카드·의료비 조건과 환급액 계산 방법</h1>
+    <p class="head-hook">신용카드 누구 명의로 긁어야 환급액이 더 커질까요?</p>
+  </div>
+</header>
+<main class="layout-container">
+<div class="native-ad"><span class="native-ad-tag">광고</span><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5883889828782515" data-ad-slot="6656858050" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+<div class="quick-facts"><div class="qf"><span class="qf-l">카드 공제 문턱</span><b class="qf-v">총급여 25%</b><span class="qf-n">넘어야 공제 시작</span></div><div class="qf"><span class="qf-l">의료비 공제 문턱</span><b class="qf-v">총급여 3%</b><span class="qf-n">넘은 금액만 공제</span></div><div class="qf"><span class="qf-l">미리보기 기간</span><b class="qf-v">10.28~12.18</b><span class="qf-n">2026년 기준</span></div></div><div class="answer"><p>맞벌이 연말정산 몰아주기는 보통 소득이 낮은 쪽에 신용카드·의료비를 몰고, 자녀 인적공제는 소득이 높은 쪽에 넣는 방향으로 짜죠. 과세표준 세율이 두 구간 이상 벌어지는 집은 반대로 짜야 할 때도 있어요. 2026년 미리보기가 10월 28일부터 12월 18일까지 열려 있으니, 지금 숫자부터 넣어 보세요.</p></div><p class="key-note">카드는 소득 낮은 쪽, 의료비도 소득 낮은 쪽이 보통 유리해요</p>
+<div class="byline">글 · <b>오투유</b><span class="date"> · 2026-11-08</span></div>
+<nav class="toc" aria-label="이 글에서 볼 것"><a href="#맞벌이-연말정산-몰아주기-방법은-왜-둘로-갈릴까">맞벌이 연말정산 몰아주기 방법은 왜 둘로 갈릴까</a><a href="#맞벌이-연말정산-신용카드-몰아주기-문턱부터-넘겨요">맞벌이 연말정산 신용카드 몰아주기 — 문턱부터 넘겨요</a><a href="#맞벌이-연말정산-의료비-몰아주기-왜-저소득자-쪽에-넣을까">맞벌이 연말정산 의료비 몰아주기 — 왜 저소득자 쪽에 넣을까</a><a href="#기부금과-자녀-공제는-누구-쪽으로-넣을까">기부금과 자녀 공제는 누구 쪽으로 넣을까</a><a href="#소득-구간별-맞벌이-연말정산-환급액-계산">소득 구간별 맞벌이 연말정산 환급액 계산</a><a href="#11월-미리보기로-돌려보면-뭐가-다를까">11월 미리보기로 돌려보면 뭐가 다를까</a></nav>
+<section class="cn" aria-label="카드뉴스"><div class="cn-top"><b class="cn-t">카드뉴스로 먼저 보기</b><span class="cn-pg"><i>1</i> / 8</span></div><div class="cn-wrap"><div class="cn-track" tabindex="0"><figure class="cn-s"><img src="/맞벌이-연말정산-몰아주기-카드-의료비-조건과-환급액-계산-방법/card-01.jpg" alt="카드뉴스 1장 — 누구 명의로 긁어야 환급이 커질까" width="1080" height="1350"></figure><figure class="cn-s"><img src="/맞벌이-연말정산-몰아주기-카드-의료비-조건과-환급액-계산-방법/card-02.jpg" alt="카드뉴스 2장 — 소득공제는 문턱 세액공제는 비율" width="1080" height="1350" loading="lazy"></figure><figure class="cn-s"><img src="/맞벌이-연말정산-몰아주기-카드-의료비-조건과-환급액-계산-방법/card-03.jpg" alt="카드뉴스 3장 — 카드는 저소득자 25% 문턱 먼저" width="1080" height="1350" loading="lazy"></figure><figure class="cn-s"><img src="/맞벌이-연말정산-몰아주기-카드-의료비-조건과-환급액-계산-방법/card-04.jpg" alt="카드뉴스 4장 — 의료비 3% 문턱 낮은 쪽이 유리" width="1080" height="1350" loading="lazy"></figure><figure class="cn-s"><img src="/맞벌이-연말정산-몰아주기-카드-의료비-조건과-환급액-계산-방법/card-05.jpg" alt="카드뉴스 5장 — 자녀 공제는 고소득자 쪽으로" width="1080" height="1350" loading="lazy"></figure><figure class="cn-s"><img src="/맞벌이-연말정산-몰아주기-카드-의료비-조건과-환급액-계산-방법/card-06.jpg" alt="카드뉴스 6장 — 세율 두 구간 벌면 반대로 몰아요" width="1080" height="1350" loading="lazy"></figure><figure class="cn-s"><img src="/맞벌이-연말정산-몰아주기-카드-의료비-조건과-환급액-계산-방법/card-07.jpg" alt="카드뉴스 7장 — 미리보기로 돌려 보고 정하세요" width="1080" height="1350" loading="lazy"></figure><figure class="cn-s"><img src="/맞벌이-연말정산-몰아주기-카드-의료비-조건과-환급액-계산-방법/card-08.jpg" alt="카드뉴스 8장 — 놓친 내 돈 소식, 카톡으로 받아 보세요" width="1080" height="1350" loading="lazy"></figure></div><button type="button" class="cn-nav cn-prev" aria-label="이전 카드">‹</button><button type="button" class="cn-nav cn-next" aria-label="다음 카드">›</button></div><div class="cn-dots"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="cn-act"><a class="cn-dl" href="/맞벌이-연말정산-몰아주기-카드-의료비-조건과-환급액-계산-방법/cardnews.zip" download="숨은돈알리미_카드뉴스_맞벌이-연말정산-몰아주기-카드-의료비-조건과-환급액-계산-방법.zip">⬇ 전체 다운로드 (8장)</a><button type="button" class="cn-share" data-url="https://o2u.kr/%EB%A7%9E%EB%B2%8C%EC%9D%B4-%EC%97%B0%EB%A7%90%EC%A0%95%EC%82%B0-%EB%AA%B0%EC%95%84%EC%A3%BC%EA%B8%B0-%EC%B9%B4%EB%93%9C-%EC%9D%98%EB%A3%8C%EB%B9%84-%EC%A1%B0%EA%B1%B4%EA%B3%BC-%ED%99%98%EA%B8%89%EC%95%A1-%EA%B3%84%EC%82%B0-%EB%B0%A9%EB%B2%95/" data-title="맞벌이 연말정산 몰아주기 — 카드·의료비 조건과 환급액 계산 방법">↗ 공유하기</button></div></section><script>(()=>{const r=document.currentScript.previousElementSibling,t=r.querySelector('.cn-track'),s=[...t.children],
+d=[...r.querySelectorAll('.cn-dots i')],pg=r.querySelector('.cn-pg i'),sh=r.querySelector('.cn-share');let n=0;
+const set=k=>{n=k;pg.textContent=k+1;d.forEach((x,i)=>x.classList.toggle('on',i===k));};
+const go=k=>t.scrollTo({left:s[Math.max(0,Math.min(s.length-1,k))].offsetLeft-t.offsetLeft,behavior:'smooth'});
+t.addEventListener('scroll',()=>{const k=Math.round(t.scrollLeft/t.clientWidth);if(k!==n)set(k);},{passive:true});
+r.querySelector('.cn-prev').onclick=()=>go(n-1);r.querySelector('.cn-next').onclick=()=>go(n+1);
+d.forEach((x,i)=>x.onclick=()=>go(i));t.addEventListener('keydown',e=>{if(e.key==='ArrowRight')go(n+1);if(e.key==='ArrowLeft')go(n-1);});
+const mob=/Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent),url=sh.dataset.url,ttl=sh.dataset.title,lb=sh.textContent;
+const done=m=>{sh.textContent=m;setTimeout(()=>sh.textContent=lb,1800);};
+sh.onclick=async()=>{if(mob&&navigator.share){try{await navigator.share({title:ttl,text:ttl,url});}catch(e){}return;}
+try{await navigator.clipboard.writeText(url);done('주소 복사됨');}catch(e){prompt('이 주소를 복사해 주세요',url);}};set(0);})();</script>
+<article class="post-body">
+
+
+<p>부부 중에 카드를 어느 쪽으로 긁을지, 병원비 영수증은 누구 이름으로 제출할지 매년 이맘때면 신경이 쓰이죠. 매달 생활비는 각자 명의로 긁고 있었는데, 정말 그대로 두면 손해일까요?</p>
+
+
+<section class="sec"><h2 id="맞벌이-연말정산-몰아주기-방법은-왜-둘로-갈릴까">맞벌이 연말정산 몰아주기 방법은 왜 둘로 갈릴까</h2><figure class="post-fig"><img src="/맞벌이-연말정산-몰아주기-카드-의료비-조건과-환급액-계산-방법/img1.jpg" alt="맞벌이 연말정산 몰아주기 안내를 받으러 세무서 입구에 다가서는 흐린 평일 오후." width="1200" height="675"></figure>
+<p>이 제도는 크게 두 갈래로 생각하면 쉬워요. 소득공제(신용카드, 의료비)는 과세표준을 깎아 주는 공제라 적용 세율이 높은 쪽이 유리해 보이지만, 실제로는 '문턱'과 '한도'가 먼저 걸리거든요. 반면 세액공제(기부금, 자녀 세액공제)는 세율과 무관하게 같은 비율로 깎여요.</p>
+
+<p>그래서 맞벌이 연말정산 신용카드 몰아주기는 문턱을 넘길 수 있는 쪽을 먼저 보고, 맞벌이 연말정산 의료비 몰아주기는 총급여가 적은 쪽에 몰아 문턱을 낮추는 식으로 설계하죠. 일반적인 맞벌이 연말정산 몰아주기 방법이 바로 이 구조예요.</p>
+
+</section>
+<section class="sec"><h2 id="맞벌이-연말정산-신용카드-몰아주기-문턱부터-넘겨요">맞벌이 연말정산 신용카드 몰아주기 — 문턱부터 넘겨요</h2>
+<p>신용카드 등 소득공제는 1년 사용액이 총급여의 25%를 넘어야 그 초과분부터 공제가 시작됩니다. 공제율은 신용카드 15%, 체크카드·현금영수증 30%, 전통시장·대중교통 40%예요. 맞벌이 연말정산 체크카드 공제까지 챙기려면 체크카드·현금영수증 비중을 올려 두는 게 유리해요.</p>
+
+<p>공제 한도는 총급여 7천만원 이하면 300만원, 그 밖이면 250만원이에요. 법령에서 정한 기본공제 대상 자녀등이 있으면 한도가 높아집니다. 총급여 7천만원 이하는 자녀등 1명 350만원·2명 이상 400만원, 그 밖은 1명 275만원·2명 이상 300만원이에요. 카드 분배를 짤 때 소득이 낮은 쪽에 몰면 25% 문턱을 넘기기 쉽고, 한도도 더 넉넉해요.</p>
+
+<div class="tbl-wrap"><table>
+<caption>맞벌이 연말정산 신용카드 몰아주기 기본 한도(2026 기준)</caption>
+<thead><tr><th>구분</th><th>총급여 7천만원 이하</th><th>그 밖</th></tr></thead>
+<tbody>
+<tr><td>기본 한도</td><td>연 300만원</td><td>연 250만원</td></tr>
+<tr><td>자녀등 1명</td><td>연 350만원</td><td>연 275만원</td></tr>
+<tr><td>자녀등 2명 이상</td><td>연 400만원</td><td>연 300만원</td></tr>
+</tbody>
+</table></div>
+
+</section>
+<div class="native-ad"><span class="native-ad-tag">광고</span><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5883889828782515" data-ad-slot="6656858050" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+<section class="sec"><h2 id="맞벌이-연말정산-의료비-몰아주기-왜-저소득자-쪽에-넣을까">맞벌이 연말정산 의료비 몰아주기 — 왜 저소득자 쪽에 넣을까</h2><figure class="post-fig"><img src="/맞벌이-연말정산-몰아주기-카드-의료비-조건과-환급액-계산-방법/img2.jpg" alt="가족 의료비 영수증을 정리하려 병원 수납 창구 앞에서 번호표를 기다리는 평일 오전." width="1200" height="675" loading="lazy"></figure>
+<p>의료비 세액공제는 총급여의 3%를 넘는 금액만 공제 대상이 됩니다. 연 700만원 한도 안에서 15%를 돌려받고, 본인·65세 이상·6세 이하·장애인 의료비는 한도 없이 15%, 미숙아·선천성이상아는 20%, 난임시술비는 30%예요. 맞벌이 연말정산 의료비 공제 한도도 이 구조를 그대로 따르죠.</p>
+
+<p>맞벌이 의료비 몰아주기 조건은 단순해요. 부양가족으로 등록된 가족의 의료비는 등록한 쪽이 공제받거든요. 의료비 세액공제에는 소득·나이 제한이 없어, 맞벌이 배우자를 위해 본인이 지급한 의료비도 공제할 수 있습니다. 자녀·부모 의료비는 기본공제 귀속과 실제 지출자를 함께 확인해야 해요.</p>
+
+<div class="example"><p><b>예를 들어</b> 남편 총급여 6,000만원, 아내 총급여 3,000만원, 자녀 의료비가 150만원이라고 해 볼게요. 남편 쪽에 넣으면 3% 문턱이 180만원이라 공제가 0원입니다. 아내 쪽에 넣으면 문턱이 90만원이라 60만원이 공제 대상이 되고, 세액공제 15%인 9만원을 돌려받아요. 가정한 숫자지만, 문턱 때문에 차이가 이렇게 벌어집니다.</p></div>
+
+<p>실비보험으로 돌려받은 금액, 국민건강보험공단의 본인부담금상한제 사후환급금은 의료비 공제 대상에서 뺍니다. 영수증을 그대로 다 올리면 오히려 가산세가 붙을 수 있으니, 보험에서 받은 돈은 꼭 제외하세요.</p>
+
+</section>
+<figure class="post-fig"><img src="/맞벌이-연말정산-몰아주기-카드-의료비-조건과-환급액-계산-방법/img3.jpg" alt="맞벌이 연말정산 신용카드 몰아주기 기본 한도(2026 기준) 비교 도표" width="1200" height="800" loading="lazy"><figcaption>본문 비교표를 도식으로 표현했습니다.</figcaption></figure>
+<section class="sec"><h2 id="기부금과-자녀-공제는-누구-쪽으로-넣을까">기부금과 자녀 공제는 누구 쪽으로 넣을까</h2>
+<p>기부금 세액공제는 15%, 1천만원 초과분은 30%입니다. 세율과 무관해서 어느 쪽에 넣어도 돌려받는 금액은 같지만, 정치자금·고향사랑·우리사주조합 기부금은 본인이 직접 지급한 분만 공제되고 이월도 안 됩니다. 이 세 가지는 명의자가 넣은 그 해에만 쓸 수 있어요.</p>
+
+<p>맞벌이 연말정산 인적공제 몰아주기는 방향이 조금 달라요. 자녀를 누구 아래에 올리느냐에 따라 기본공제와 자녀 세액공제가 함께 따라붙는데, 기본공제는 소득이 높은 쪽에 넣어야 적용 세율이 높아 과세표준이 더 깎입니다. 맞벌이 연말정산 자녀 공제 누구에게 넣는지 고민된다면, 과세표준 구간이 더 높은 쪽이 보통 유리해요.</p>
+
+</section>
+<div class="native-ad"><span class="native-ad-tag">광고</span><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5883889828782515" data-ad-slot="6656858050" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+<section class="sec"><h2 id="소득-구간별-맞벌이-연말정산-환급액-계산">소득 구간별 맞벌이 연말정산 환급액 계산</h2>
+<p>종합소득 과세표준별 세율은 1,400만원 이하 6%, 5,000만원 이하 15%, 8,800만원 이하 24%, 1억5천만원 이하 35%입니다. 맞벌이 연말정산 환급액 계산은 이 세율 차이로 갈라져요. 맞벌이 연말정산 소득공제 비교를 할 때는 '내 과세표준이 어느 구간에 있는지'부터 확인합니다.</p>
+
+<div class="example"><p><b>예를 들어</b> 남편 과세표준 7,000만원(24%), 아내 과세표준 3,500만원(15%)이고, 신용카드 소득공제 가능액이 300만원이라고 해 봅시다. 남편에게 몰면 72만원(24%), 아내에게 몰면 45만원(15%)을 돌려받아요. 반대로 의료비는 아내 쪽 3% 문턱이 더 낮아 공제 대상이 크게 잡힙니다. 카드와 의료비를 똑같은 쪽에 몰면 손해라, 두 항목을 쪼개 계산해야 정확해요.</p></div>
+
+<div class="opinion"><p><b>오투유의 생각</b> 저는 맞벌이 연말정산 몰아주기를 '저소득자에게 무조건 몰빵'이라는 공식으로 외우는 건 위험하다고 봅니다. 공고문을 보면 저소득자 유리가 원칙이지만, 과세표준 세율이 두 구간 이상 벌어지면(15% vs 35%) 고소득자 쪽으로 몰아야 환급액이 더 커지는 경우도 있어요. 미리보기로 직접 돌려 보고 결정하는 게 제일 안전해요.</p></div>
+
+</section>
+<section class="sec"><h2 id="11월-미리보기로-돌려보면-뭐가-다를까">11월 미리보기로 돌려보면 뭐가 다를까</h2>
+<p>국세청 연말정산 미리보기는 2026년 10월 28일부터 12월 18일까지 열려 있어요. 당해 예상 소득과 지출을 넣으면 예상 환급액, 신용카드 소득공제 효과, 공제 항목별 절세 포인트가 바로 뜹니다. 홈택스 맞벌이 절세안내 메뉴에서 부부 각자 로그인한 뒤 자료를 공유하면 맞벌이 연말정산 절세 시뮬레이션이 가능해요. 자녀·부모 의료비를 누구 아래 넣을지는 여기서 돌려 보고 정하죠.</p>
+
+<p>정확한 기준은 국세청 홈택스에서 확인하세요. 아직 두 달치 카드 사용액이 남아 있으니 지금 결정하면 환급액이 몇 만원 단위로 바뀝니다. 맞벌이 연말정산 몰아주기 계산기 역할을 미리보기가 대신해 주니, 별도 계산기는 필요 없어요. <a href="https://yearendtax.o2u.kr/">우리 블로그 연말정산 미리보기 안내</a>도 같이 참고해 볼 수 있습니다.</p>
+
+<p>월급 자체가 얼마인지부터 다시 확인하고 싶다면 <a href="https://salary.winevisionshop.kr/">연봉 실수령액 계산기</a>로 세전·세후부터 보고 넘어가세요.</p>
+
+</section>
+</article>
+<section class="cards nk-rel" aria-label="이어서 보기"><h2 class="cards-t">내 상황에 맞춰 이어서 보기</h2><div class="card-grid"><a class="link-card" href="/임금체불-간이대지급금-조건은-받을-금액과-신청-기간/"><span class="lc-kind">같이 읽기</span><strong class="lc-hook">체불 임금이 신경 쓰인다면 → 간이대지급금 조건과 신청기간 확인</strong><span class="lc-title">임금체불 간이대지급금 조건은? 받을 금액과 신청 기간 →</span></a><a class="link-card" href="/연말정산-모의계산-방법-국세청-홈택스-절세-전략/"><span class="lc-kind">같이 읽기</span><strong class="lc-hook">미리보기 돌려 보려면 → 국세청 홈택스 모의계산 방법</strong><span class="lc-title">연말정산 모의계산 방법 국세청 홈택스 절세 전략 →</span></a><a class="link-card" href="/연말정산-세액공제-irp-연금저축-절세-전략/"><span class="lc-kind">같이 읽기</span><strong class="lc-hook">공제 한도 더 늘리고 싶다면 → IRP 연금저축 세액공제 전략</strong><span class="lc-title">연말정산 세액공제 IRP 연금저축 절세 전략 →</span></a><a class="link-card tool" href="https://salary.winevisionshop.kr/"><span class="lc-kind">계산·조회</span><strong class="lc-hook">월급이 얼마 들어오는지 애매하다면 → 연봉 실수령액 계산기</strong><span class="lc-title">연봉 실수령액 계산기 →</span></a><a class="link-card tool" href="https://juhu.oldee.kr/"><span class="lc-kind">계산·조회</span><strong class="lc-hook">주휴수당 빠진 건 아닌지 → 주휴수당 계산기</strong><span class="lc-title">주휴수당 계산기 →</span></a><a class="link-card tool" href="https://retire.ledgolf.kr/"><span class="lc-kind">계산·조회</span><strong class="lc-hook">퇴직금 얼마 쌓였는지 → 퇴직금 계산기</strong><span class="lc-title">퇴직금 계산기 →</span></a></div></section>
+<section class="faq"><h2 id="faq">자주 묻는 질문</h2><details class="qa" open><summary>맞벌이 연말정산 몰아주기 계산기는 따로 받아야 하나요?</summary><p>따로 받을 필요는 없습니다. 국세청 홈택스의 연말정산 미리보기가 맞벌이 연말정산 절세 시뮬레이션을 대신해 주거든요. 10월 28일부터 12월 18일 사이에 부부 각자 로그인해 돌려 보면 됩니다.</p></details><details class="qa"><summary>맞벌이 의료비 몰아주기 조건이 따로 있나요?</summary><p>맞벌이 부부도 배우자를 위해 직접 지급한 의료비는 지급한 사람이 공제받을 수 있습니다. 의료비 세액공제에는 배우자의 소득·나이 제한을 적용하지 않아요. 다만 자녀·부모 의료비는 부양가족으로 등록한 쪽이 공제받아요. 소득 적은 쪽이 3% 문턱이 낮아 보통 유리합니다.</p></details><details class="qa"><summary>맞벌이 연말정산 자녀 공제 누구 쪽이 유리한가요?</summary><p>기본공제(소득공제)는 적용 세율이 높은 쪽에 넣어야 과세표준이 크게 깎여요. 자녀 세액공제는 세율과 무관하지만 기본공제와 묶여 따라가니, 보통 과세표준이 높은 배우자 쪽으로 올리죠.</p></details><details class="qa"><summary>맞벌이 연말정산 체크카드 공제도 몰아줄 수 있나요?</summary><p>신용카드와 같은 사람 아래에 체크카드·현금영수증을 묶으면 25% 문턱을 넘긴 뒤 30% 공제율이 걸려 유리합니다. 어차피 같은 '신용카드 등' 공제 묶음이라, 체크카드만 따로 다른 쪽에 넣을 수는 없어요.</p></details><details class="qa"><summary>환급액 계산은 언제부터 가능한가요?</summary><p>2026년 10월 28일부터 12월 18일까지 홈택스 미리보기에서 바로 돌려볼 수 있습니다. 당해 1~9월 간소화 자료가 미리 들어가 있어, 10~12월 사용 예정액만 추가로 입력하면 예상 환급액과 추가 납부액이 뜹니다.</p></details></section>
+<div class="native-ad"><span class="native-ad-tag">광고</span><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5883889828782515" data-ad-slot="6656858050" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+<section class="author-box"><b>글 · 오투유</b><p>기준은 바뀔 수 있어요. 신청 전에는 해당 기관 안내를 한 번 더 확인해 주세요.</p></section>
+<a class="kko-cta" href="https://pf.kakao.com/_tJpjX/friend" target="_blank" rel="noopener" data-kko="post"><span class="kko-badge"><i></i>카카오톡 채널 · 숨은돈 알리미</span><strong class="kko-head">신청 안 하면 사라지는 돈, 먼저 알려드려요</strong><span class="kko-sub">환급금 · 지원금 · 장려금 · 휴면예금처럼 놓치기 쉬운 돈만 골라 카톡으로 알려드려요.</span><span class="kko-chips"><span>무료</span><span>1초면 추가</span><span>언제든 차단</span></span><span class="kko-btn">채널 추가하고 알림 받기 →</span></a>
+</main>
+<footer class="site-foot"><a href="/">오투유 홈</a> · <a href="/feed.xml">RSS</a> · <a href="/sitemap.xml">사이트맵</a></footer>
+<script src="https://isthex.github.io/00_controltower/ads/ad-loader.js"></script>
+</body>
+</html>
